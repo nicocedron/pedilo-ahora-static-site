@@ -1,0 +1,104 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Rubik, sans-serif;
+	font-size: 62.5%;
+	height: 100vh;
+}
+
+.hero{
+	height: 100vh;
+	background: url('../images/bg.jpg');
+	background-size: cover;
+	background-position: left center;
+}
+
+.content{
+	background: rgba(64, 0, 19, 0.5);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+.content h1{
+	font-weight: 500;
+	font-size: 10em;
+}
+
+.content h2{
+	font-weight: 300;
+	font-size: 8em;
+	margin: 40px;
+}
+
+.social img{
+	width: 1em;
+	height: 1em;
+	vertical-align: top;
+}
+
+.social{
+	font-size: 3em;
+}
+
+.social + .social{
+	margin-top: 50px; 
+}
+
+.social.big{
+	font-size: 4em;
+}
+
+.social.effect{
+	animation: pulse 1s infinite;
+}
+
+.social .item{
+	color: #fff;
+	text-decoration: none;
+}
+
+@keyframes pulse{
+	0%{
+		transform: scale(1);
+	}
+
+	50%{
+		transform: scale(1.1);
+	}
+
+	100%{
+		transform: scale(1);
+	}
+}
+@media screen and (max-width: 845px){
+	.content h1{
+		font-size: 8em;
+	}
+	body{
+		font-size: 50%;
+	}
+}
+
+@media screen and (max-width: 670px){
+	.content h1{
+		font-size: 7em;
+	}
+
+	body{
+		font-size: 40%;
+	}
+}
+
+@media screen and (max-width: 530px){
+	body{
+		font-size: 35%;
+	}
+}
